@@ -1,0 +1,124 @@
+.todo-list {
+    border: 1px solid #000000;
+    flex: 1;
+    padding-bottom: 0;
+    position: relative;
+}
+
+.todo-list .todo-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.todo-list .todo-content .title {
+    margin: 50px 0;
+}
+
+.todo-list .todo-content .search-input {
+    outline: none;
+    border: 1px solid #BDBDBD;
+    margin: 10px 50px;
+    height: 31px;
+    border-radius: 5px;
+    padding-left: 10px;
+    width: 100%;
+}
+
+.todo-list .todo-content .todo-item {
+    border: 1px solid #000000;
+    width: 100%;
+    margin: 15px 50px;
+}
+
+.todo-list .todo-content .todo-item .todo-item-title, .todo-list .todo-content .action .action-btn {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.btn {
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+    width: 93px;
+    height: 27px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn.detail-btn {
+    background-color: #00BCD4;
+}
+
+.btn.remove-btn {
+    background-color: #D9534F;
+    margin-left: 10px;
+}
+
+.btn.done-btn {
+    margin-right: 10px;
+    background-color: #2196F3;
+}
+
+.todo-list .todo-content .todo-item .todo-item-detail {
+    display: none;
+    border-top: 1px solid #000000;
+    padding: 20px;
+}
+
+.todo-list .todo-content .todo-item .todo-item-detail.active {
+    display: block;
+}
+
+.todo-list .todo-content .todo-item .todo-item-title .action-btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.todo-list .todo-content .todo-item .todo-item-title .checkbox-input {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.todo-list .todo-content .todo-item .todo-item-title .checkbox-input .todo-item-text {
+    font-size: 16px;
+    padding: 5px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+
+.todo-list .todo-content .title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.todo-list .action {
+    background-color: #E0E0E0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 82px;
+    border: 1px solid #000000;
+    padding: 0 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.todo-list .action .action-title {
+    font-size: 13px;
+    color: #333333;
+}
+
+.todo-list .action.hidden {
+    display: none;
+}
